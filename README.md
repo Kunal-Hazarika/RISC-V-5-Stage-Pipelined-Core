@@ -50,7 +50,6 @@ This repository contains the RTL (Verilog) implementation of a 32-bit RISC-V pro
 * **Simulation:**
   * `pipeline_tb.v`: Testbench for the pipeline.
   * `memfile.hex`: Hex file containing RISC-V machine code for initialization.
-  * `pipeline.gtkw`: GTKWave save file for viewing waveforms.
 
 ---
 
@@ -62,7 +61,3 @@ To prevent pipeline stalls due to Data Hazards (specifically RAW dependencies), 
 * **ForwardA/B = 2'b00:** Default. ALU operands come directly from the ID/EX pipeline register (Register File).
 * **ForwardA/B = 2'b10:** EX/MEM Forwarding. The ALU operand is bypassed from the previous ALU result (Instruction currently in MEM stage).
 * **ForwardA/B = 2'b01:** MEM/WB Forwarding. The ALU operand is bypassed from the Data Memory output or an earlier ALU result (Instruction currently in WB stage).
-
-1. **Compile the design:**
-   ```bash
-   iverilog -o pipeline_sim pipeline_tb.v
