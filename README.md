@@ -20,15 +20,15 @@ This repository contains the RTL (Verilog) implementation of a 32-bit RISC-V pro
 
 ### Abstract Pipeline Stages
 *(Reference: Slide 5)*
-![Abstract Pipeline Architecture](images/page5.png)
+![Abstract Pipeline Architecture](page5.png)
 
 ### Basic Pipeline Datapath
 *(Reference: Slide 6)*
-![Pipeline Datapath](images/page6.png)
+![Pipeline Datapath](page6.png)
 
 ### Complete Datapath with Hazard Unit and Forwarding
 *(Reference: Slide 32)*
-![Datapath with Hazard Unit](images/page32.png)
+![Datapath with Hazard Unit](page32.png)
 
 ---
 
